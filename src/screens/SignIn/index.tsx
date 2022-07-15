@@ -1,11 +1,12 @@
 import React from 'react';
+import { MaterialIcons } from '@expo/vector-icons';
 import { 
   Box,
   Center,
   Heading,
   Input,
   FormControl,
-  VStack,
+  Icon,
 } from 'native-base';
 
 export function SignIn() {
@@ -25,10 +26,28 @@ export function SignIn() {
           <FormControl.Label>E-mail</FormControl.Label>
           <Input 
             placeholder='seu@email.com.br'
+            InputLeftElement={
+              <Icon 
+                as={<MaterialIcons name="person" />}
+                size={5}
+                ml={2}
+                color="muted.400"
+              />
+            }
           />
 
           <FormControl.Label>Senha</FormControl.Label>
-          <Input placeholder='sua senha' />
+          <Input 
+            placeholder='sua senha' 
+            InputLeftElement={
+              <Icon 
+                as={<MaterialIcons name="lock" />}
+                size={5}
+                ml={2}
+                color="muted.400"
+              />
+            }
+          />
         </FormControl>
       </Box>
     </Center>
