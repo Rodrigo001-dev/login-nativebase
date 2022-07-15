@@ -8,6 +8,9 @@ import {
   FormControl,
   Icon,
   Button,
+  Checkbox,
+  Text,
+  HStack,
 } from 'native-base';
 
 export function SignIn() {
@@ -57,8 +60,15 @@ export function SignIn() {
         >
           Entrar
         </Button>
-
       </Box>
+
+      <HStack>
+        <Checkbox value="agree" />
+
+        <Text>
+          Concordo com a politica de segurança
+        </Text>
+      </HStack>
     </Center>
   );
 };
