@@ -7,6 +7,7 @@ import {
   Input,
   FormControl,
   Icon,
+  Button,
 } from 'native-base';
 
 export function SignIn() {
@@ -49,6 +50,14 @@ export function SignIn() {
             }
           />
         </FormControl>
+
+        <Button
+          mt="10"
+          colorScheme="purple"
+        >
+          Entrar
+        </Button>
+
       </Box>
     </Center>
   );
