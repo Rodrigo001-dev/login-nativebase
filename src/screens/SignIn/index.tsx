@@ -22,7 +22,7 @@ export function SignIn() {
     >
       <VStack 
         width="full"
-        p={5}
+        p={10}
       >
         {/* o componente Box é como se fosse uma View ou uma div */}
         <Box width="full">
@@ -45,6 +45,14 @@ export function SignIn() {
               }
             />
 
+            <FormControl.ErrorMessage>
+              E-mail inválido
+            </FormControl.ErrorMessage>
+
+          </FormControl>
+
+
+          <FormControl>
             <FormControl.Label>Senha</FormControl.Label>
             <Input 
               placeholder='sua senha' 
@@ -67,10 +75,10 @@ export function SignIn() {
           </Button>
         </Box>
 
-        <HStack>
+        <HStack mt={5}>
           <Checkbox value="agree" />
 
-          <Text>
+          <Text ml={3}>
             Concordo com a politica de segurança
           </Text>
         </HStack>
