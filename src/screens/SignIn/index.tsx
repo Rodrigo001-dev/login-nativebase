@@ -1,13 +1,15 @@
 import React from 'react';
 import { 
   Box,
-  Center 
+  Center,
 } from 'native-base';
 
 export function SignIn() {
   return (
     // o Center vai centralizar o conteudo
-    <Center>
+    <Center
+      height="full"
+    >
       <Box>Hello World</Box>
     </Center>
   );
