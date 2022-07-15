@@ -11,6 +11,7 @@ import {
   Checkbox,
   Text,
   HStack,
+  VStack,
 } from 'native-base';
 
 export function SignIn() {
@@ -19,56 +20,61 @@ export function SignIn() {
     <Center
       height="full"
     >
-      {/* o componente Box é como se fosse uma View ou uma div */}
-      <Box width="full">
-        {/* o Heading é para exibir texto em destaque */}
-        <Heading color="coolGray.700">
-          Entrar
-        </Heading>
+      <VStack 
+        width="full"
+        p={5}
+      >
+        {/* o componente Box é como se fosse uma View ou uma div */}
+        <Box width="full">
+          {/* o Heading é para exibir texto em destaque */}
+          <Heading color="coolGray.700">
+            Entrar
+          </Heading>
 
-        <FormControl>
-          <FormControl.Label>E-mail</FormControl.Label>
-          <Input 
-            placeholder='seu@email.com.br'
-            InputLeftElement={
-              <Icon 
-                as={<MaterialIcons name="person" />}
-                size={5}
-                ml={2}
-                color="muted.400"
-              />
-            }
-          />
+          <FormControl>
+            <FormControl.Label>E-mail</FormControl.Label>
+            <Input 
+              placeholder='seu@email.com.br'
+              InputLeftElement={
+                <Icon 
+                  as={<MaterialIcons name="person" />}
+                  size={5}
+                  ml={2}
+                  color="muted.400"
+                />
+              }
+            />
 
-          <FormControl.Label>Senha</FormControl.Label>
-          <Input 
-            placeholder='sua senha' 
-            InputLeftElement={
-              <Icon 
-                as={<MaterialIcons name="lock" />}
-                size={5}
-                ml={2}
-                color="muted.400"
-              />
-            }
-          />
-        </FormControl>
+            <FormControl.Label>Senha</FormControl.Label>
+            <Input 
+              placeholder='sua senha' 
+              InputLeftElement={
+                <Icon 
+                  as={<MaterialIcons name="lock" />}
+                  size={5}
+                  ml={2}
+                  color="muted.400"
+                />
+              }
+            />
+          </FormControl>
 
-        <Button
-          mt="10"
-          colorScheme="purple"
-        >
-          Entrar
-        </Button>
-      </Box>
+          <Button
+            mt="10"
+            colorScheme="purple"
+          >
+            Entrar
+          </Button>
+        </Box>
 
-      <HStack>
-        <Checkbox value="agree" />
+        <HStack>
+          <Checkbox value="agree" />
 
-        <Text>
-          Concordo com a politica de segurança
-        </Text>
-      </HStack>
+          <Text>
+            Concordo com a politica de segurança
+          </Text>
+        </HStack>
+      </VStack>
     </Center>
   );
 };
