@@ -1,8 +1,14 @@
 import React from 'react';
-import { Box } from 'native-base';
+import { 
+  Box,
+  Center 
+} from 'native-base';
 
 export function SignIn() {
   return (
-    <Box>Hello World</Box>
+    // o Center vai centralizar o conteudo
+    <Center>
+      <Box>Hello World</Box>
+    </Center>
   );
 };
