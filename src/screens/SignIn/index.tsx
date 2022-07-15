@@ -26,6 +26,8 @@ export function SignIn() {
       <Image
         size={150}
         source={{ uri: 'https://github.com/Rodrigo001-dev.png' }}
+        alt="Imagem do perfil do Usuário"
+        resizeMode='contain'
       />
 
       <VStack 
