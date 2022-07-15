@@ -12,6 +12,8 @@ import {
   Text,
   HStack,
   VStack,
+  WarningOutlineIcon,
+  Image,
 } from 'native-base';
 
 export function SignIn() {
@@ -20,6 +22,12 @@ export function SignIn() {
     <Center
       height="full"
     >
+
+      <Image
+        size={150}
+        source={{ uri: 'https://github.com/Rodrigo001-dev.png' }}
+      />
+
       <VStack 
         width="full"
         p={10}
@@ -45,7 +53,9 @@ export function SignIn() {
               }
             />
 
-            <FormControl.ErrorMessage>
+            <FormControl.ErrorMessage
+              leftIcon={<WarningOutlineIcon size="xs" />}
+            >
               E-mail inválido
             </FormControl.ErrorMessage>
 
