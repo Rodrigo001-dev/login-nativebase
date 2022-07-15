@@ -2,6 +2,7 @@ import React from 'react';
 import { 
   Box,
   Center,
+  Heading
 } from 'native-base';
 
 export function SignIn() {
@@ -10,7 +11,13 @@ export function SignIn() {
     <Center
       height="full"
     >
-      <Box>Hello World</Box>
+      {/* o componente Box é como se fosse uma View ou uma div */}
+      <Box>
+        {/* o Heading é para exibir texto */}
+        <Heading>
+          Entrar
+        </Heading>
+      </Box>
     </Center>
   );
 };
