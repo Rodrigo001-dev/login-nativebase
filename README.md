@@ -16,6 +16,13 @@ Mas uma das coisas mais interessantes é utilizar uma biblioteca que além de en
 Hoje em dia quando falamos de biblioteca de UI Kit para o React-Native, a mais utilizada de forma disparada é a native-base.
 Umas das grandes vantagens da native-base é que além dela ser uma biblioteca que possui vários componentes prontos, ela já tem responsividade!
 
+<LINKEDIN>
+Mas quando não utilizar o native-base?
+
+Toda ferramenta/biblioteca tem prós e contras.
+Você não vai utilizar o native-base quando você querer criar seus próprios componentes, inteiramente customizados por você, só que nesse caso você teria que investir um pouco mais de tempo.
+</LINKEDIN>
+
 [Veja mais do native-base aqui!](https://nativebase.io/)
 
 ## 🚀 Tecnologias/Bibliotecas utilizadas
